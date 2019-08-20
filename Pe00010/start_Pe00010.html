@@ -11,10 +11,11 @@
             background-color:silver;
 
         }
-        table {
+        .Tabelle {
             border: 1px solid black;
             border-spacing: 0.5rem;
             border-collapse: collapse;
+            position: absolute; top: 200px; left: 30px; 
         }
         td, th {
             border: 1px solid black;
@@ -45,19 +46,44 @@ img {
   text-align:center
   
 }
+.Dragon1 {
+  float: left;
+  padding: 5px;
+}
+.Dragon2 {
+  float:left;
+  padding: 5px;
+}
+.Dragon3 {
+  float:left;
+  padding: 5px;
+}
+
     </style>
 </head>
 
+<div class="test">
+        <div class="Dragon3">
+            <img src="https://media.giphy.com/media/3o7TKrEzvLbsVAud8I/giphy.gif"/ height="200" width="200"/>          
+       </div>
+        </div>
+        <div class="Dragon2">
+            <img class="middle-img" 
+             src="https://media.giphy.com/media/3o7TKrEzvLbsVAud8I/giphy.gif"/ height="200" width="200"/>
+        </div>
+        <div class="Dragon3">
+            <img src="https://media.giphy.com/media/3o7TKrEzvLbsVAud8I/giphy.gif"/ height="200" width="200"/>          
+       </div>
+    </div>
 <body>
     <h1>Ironhack Dragon Game</h1>
-    <img src="https://media.giphy.com/media/3o7TKrEzvLbsVAud8I/giphy.gif" alt="Dragon">
-    <table>
-        <thead>
-            <th>Name</th>
-            <th>E-Mail</th>
-            <th>Professional History</th>
-        </thead>
-        <tbody>
+        <tbody class="Tabelle">
+                <table>
+                        <thead>
+                            <th>Name</th>
+                            <th>E-Mail</th>
+                            <th>Professional History</th>
+                        </thead>
             <tr>
                 <td> <a href="./Pe00001/Pe00001.html">Patrick</a></td>
                 <td>patrick.sbrzesny@saw-office.net</td>
