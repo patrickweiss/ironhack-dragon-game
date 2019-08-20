@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+body h1 {
+    font-size: 3.0rem;
+    text-shadow: #888a8f 8px -10px 9px;
+    margin-left: 10px;
+}
+
+.nav-bar {
+    background-color: rgb(94, 91, 91);
+    padding: 1rem 0;
+    margin: -1rem;
+}
+
+.nav-bar a, span {
+    margin-left: 10px;
+}
+
+.nav-bar button {
+    padding: 0.25rem;
+    border-radius: 0.6rem;
+}
+
+.mydata {
+    background-color: rgb(94, 91, 91);
+    display: flex;
+    justify-content: left;
+    margin: -1rem;
+}
+
+.mydata article {
+    flex-direction: column;
+    width: 420px;
+    margin-left: 10px;
+}
+
+.mydata ul {
+    margin-left: -1rem;
+    line-height: 2rem;
+    list-style: circle;
+}
+
+img {
+    width: 20rem;
+}
