@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h2{
+    font-size: 1,5rem;
+}
+body {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 3.5em;
+  font-weight: 300;
+  background-color: lightgrey;
+}
+
+li{
+   list-style-type: none;
+}
+li::before  {
+    content: "♥ ";    
+    color: red;
+    font-size: 1.5em;
+  }
+
+  .ul::before  {
+    content: "⇒  ";    
+    color: black;
+    font-size: 1.5em;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+  }
+  .box-ul{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 75em;
+    border: 2px dotted
+    
+     }
+  img{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+  }
+  .dl{
+    font-size: 0,5rem;
+    
+  }
+  dt:nth-child(odd)
+  { 
+      background: lightblue;
+      width: 30%; 
+  }
+  dd:nth-child(even)
+  { 
+      background: lightpink;
+      width: 50%; 
+  
+  

@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>Zurück zur<a href="../start.html"> Spielerliste</a></p>
+    <div class="nav-bar">
+        <span>Zurück zur</span>
+        <a href="../start.html"><button>Spielerliste</button></a>
+    </div>
     <h1>Stefan</h1>
-    <h2>Kontaktdaten</h2>
-    <ul>
-        <li>Vorname: Stefan</li>
-        <li>E-Mail: brueckls@mediamarktsaturn.com</li>
-        <li>Telefon: 0151 40632245</li> 
-    </ul>
-    <h2>Beruflicher Lebenslauf</h2>
-    <ul>
-        <li>3 Jahre Ausbildung Fachinformatiker MediaMarktSaturn</li>
-        <li>1 Jahr Administrator MediaMarktSaturn</li>
-    </ul>
+    <section class="mydata">
+        <article class="contact">
+            <h2>Kontaktdaten</h2>
+            <ul>
+                <li>Vorname: Stefan</li>
+                <li>E-Mail: brueckls@mediamarktsaturn.com</li>                    <li>Telefon: 0151 40632245</li> 
+            </ul>
+        </article>
+        <article class="job">
+            <h2>Beruflicher Lebenslauf</h2>
+            <ul>
+                <li>3 Jahre Ausbildung Fachinformatiker MediaMarktSaturn</li>
+                <li>1 Jahr Administrator MediaMarktSaturn</li>
+            </ul>
+        </article>
+    </section>
+
     <h2>Ziel nach dem Bootcamp</h2>
     <p>Ich will als Backend Entwickler arbeiten mit Berührungspunkten zur Google Cloud.</p>
     <h2>Fähigkeiten und Kompetenzen</h2>
