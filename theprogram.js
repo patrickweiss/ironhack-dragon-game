@@ -1,3 +1,4 @@
+/*
 console.log("Hallo aus the program.js");
 
 let playersString = "Dominik,Jürgen,Doreen,Stefan";
@@ -69,12 +70,6 @@ playersArray.forEach(player => console.log(player));
 console.log("if we need the index");
 playersArray.forEach( (player,playerIndex) => console.log(`Index: ${playerIndex} Spieler:${player}`));
 
-let playersArray = ["Patrick","Marco","Stefan"];
-
-let playerPatrickObject = ["Patrick","patrick@saw-office"]
-    vorname:"Patrick",
-    e-mail:"patrick@saw-office"
-};
 
 let playersDataTableAs2DArray  = [
     ["Name","e-mail"],
@@ -82,7 +77,78 @@ let playersDataTableAs2DArray  = [
     ["Marco","marco@marco.com"]
 ]
 
-window.document.getElementById("ersteSpalte").innerHTML="was anderes";
+window.document.getElementById("ersteSpalte").innerText="was anderes";
+*/
+
+console.log("now we want to get data from the server: callback functions")
+//here comes different callback function syntax
 
 
-SpreadSheet.getData("Person");
+
+function generateHTMLFromData() {
+    let data = "pretend this data came from the server";
+    console.log("this data comes from the server: " + data);
+    window.document.getElementById("ersteSpalte").innerText = data;
+}
+
+//let serverData=getserverData();
+//generateHTMLFromData(serverData);
+
+setTimeout(generateHTMLFromData, 2000);
+
+console.log("We can generate the rest of the page, while waiting for the server reponse");
+window.document.getElementById("gameTitle").innerText = "Eisenhack Drachen Spiel";
+
+console.log("if we use this function only one time, we don't need to give it a name");
+
+// ES5
+setTimeout(
+    function () {
+        console.log("Best!");
+    },
+    3000
+);
+
+const timeoutId = setTimeout(
+    () => {  console.log("could live with that"); },
+    4000
+);
+
+const timeoutId1 = setTimeout(() => {
+    console.log("don't like this");
+}, 5000);
+
+const timeoutId2 = setTimeout(
+    () => {
+        console.log("better");
+    },
+    6000
+);
+
+let anzahlAufrufe = 1;
+const intervalId = setInterval(
+    () => {
+        console.log(anzahlAufrufe);
+        anzahlAufrufe++;
+        if (anzahlAufrufe > 10) {
+            clearInterval(intervalId);
+        }
+    },
+    500
+);
+
+
+let htmlGenerierenExpression = function(){
+    console.log("this is a function expression")
+}
+
+htmlGenerierenExpression();
+
+
+htmlGenerierenDeclaration();
+
+function htmlGenerierenDeclaration(){
+    console.log("this come from a function declaration");
+}
+
+
