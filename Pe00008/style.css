@@ -2,12 +2,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     margin-left: 1rem;
+    background: rgb(134, 129, 129);
 }
 
 body h1 {
     font-size: 3.0rem;
-    text-shadow: #888a8f 8px -10px 9px;
-    margin-left: 10px;
+    text-shadow: #050505 8px -10px 13px;
 }
 
 .nav-bar {
@@ -44,6 +44,32 @@ body h1 {
     list-style: circle;
 }
 
-img {
-    width: 20rem;
+.container {
+    padding-top: 1rem;
+}
+
+dl {
+    display: flex;
+    flex-flow: row wrap;
+}
+dt {
+    flex-basis: 20%;
+    padding: 2px 4px;
+    text-align: right;
+    color: rgb(37, 195, 216);
+}
+
+dt:after {
+    content:' ->'
+}
+
+dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+}
+
+.bothcolumns {
+    display:flex;
 }
